@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="header">
+            <div class="title">Modern Calculator</div>
+            <button class="theme-toggle" id="theme-toggle" title="Toggle theme">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+        
+        <div class="display">
+            <div class="previous-operand" id="previous-operand"></div>
+            <div class="current-operand" id="current-operand">0</div>
+        </div>
+        
+        <div class="keypad">
+            <button class="clear span-two" data-action="clear">AC</button>
+            <button class="delete" data-action="delete">DEL</button>
+            <button class="operator" data-operation="÷">÷</button>
+            
+            <button data-number="7">7</button>
+            <button data-number="8">8</button>
+            <button data-number="9">9</button>
+            <button class="operator" data-operation="×">×</button>
+            
+            <button data-number="4">4</button>
+            <button data-number="5">5</button>
+            <button data-number="6">6</button>
+            <button class="operator" data-operation="−">−</button>
+            
+            <button data-number="1">1</button>
+            <button data-number="2">2</button>
+            <button data-number="3">3</button>
+            <button class="operator" data-operation="+">+</button>
+            
+            <button data-number="0">0</button>
+            <button class="decimal" data-action="decimal">.</button>
+            <button class="equals span-two" data-action="equals">=</button>
+        </div>
+        
+        <div class="instructions">
+            <h3><i class="fas fa-keyboard"></i> Keyboard Support</h3>
+            <ul>
+                <li>Numbers: <span class="key-hint">0-9</span></li>
+                <li>Operators: 
+                    <span class="key-hint">+</span>, 
+                    <span class="key-hint">-</span>, 
+                    <span class="key-hint">*</span>, 
+                    <span class="key-hint">/</span>
+                </li>
+                <li>Decimal: <span class="key-hint">.</span></li>
+                <li>Calculate: <span class="key-hint">Enter</span> or <span class="key-hint">=</span></li>
+                <li>Clear: <span class="key-hint">Escape</span></li>
+                <li>Delete: <span class="key-hint">Backspace</span></li>
+            </ul>
+            <div class="footer">Click buttons or use keyboard to operate</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
